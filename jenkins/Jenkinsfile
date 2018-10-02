@@ -9,4 +9,8 @@ node {
       sh '/var/jenkins_home/apache-maven-3.5.4/bin/mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
     }
   }
+  stage ('test'){
+  				sh 'make check || true' 
+                junit '**/target/*.xml' 
+  }
 }
