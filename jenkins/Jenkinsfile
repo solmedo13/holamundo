@@ -10,6 +10,6 @@ node {
     }
   }
   stage ('test'){
-  		sh 'mvn test'
+  		sh '/var/jenkins_home/apache-maven-3.5.4/bin/mvn test'
   }
 }
