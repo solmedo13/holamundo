@@ -6,7 +6,7 @@ node {
   
     withSonarQubeEnv('SonarServer') {
       // requires SonarQube Scanner for Maven 3.2+
-      sh '/var/jenkins_home/apache-maven-3.5.4/bin/mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar' +
+      sh '/var/jenkins_home/apache-maven-3.5.4/bin/mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar ' +
                 '-f all/pom.xml ' +
           '-Dsonar.projectKey=org.tfg:all:master ' +
           '-Dsonar.login=$SONAR_UN ' +
