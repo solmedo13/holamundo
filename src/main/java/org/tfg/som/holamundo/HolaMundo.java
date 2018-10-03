@@ -6,7 +6,11 @@ public class HolaMundo {
 	public HolaMundo(String texto) {
 		this.holaMundo = texto;
 	}
-	public String getHolaMundo() {
-		return this.holaMundo;
+	public String getHolaMundo(int opc) {
+		switch (opc) {
+		case 1: return "adios";
+		default: return holaMundo;
+		}
+	
 	}
 }
