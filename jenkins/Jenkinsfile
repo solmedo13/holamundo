@@ -10,7 +10,6 @@ node {
     }
   }
   stage ('test'){
-  				sh 'make check || true' 
-                junit '**/target/*.xml' 
+  		sh 'mvn test'
   }
 }
