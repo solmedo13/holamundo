@@ -12,6 +12,7 @@ public class HolaMundoTest{
 	@Test
 	public void getHolaMundo() {
 		HolaMundo hi = new HolaMundo("Holi");
-		Assert.assertEquals("Holi",hi.getHolaMundo());
+		Assert.assertTrue("Correcto","Holi".equals(hi.getHolaMundo()));
+		
 	}
 }
