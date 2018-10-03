@@ -1,13 +1,17 @@
 package org.tfg.som.holamundo;
 
+
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
 
-public class HolaMundoTest {
+
+
+
+public class HolaMundoTest{
 	@Test
-	public void getHolaMundoTest() {
+	public void getHolaMundo() {
 		HolaMundo hi = new HolaMundo("Holi");
-		Assert.assertEquals("Holi", hi.getHolaMundo());
+		Assert.assertEquals("Holi",hi.getHolaMundo());
 	}
 }
