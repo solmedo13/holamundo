@@ -21,4 +21,8 @@ node {
   stage ('test'){
   		sh '/var/jenkins_home/apache-maven-3.5.4/bin/mvn test'
   }
+  
+    stage ('call other job'){
+  		build job: 'tarea2', propagate: true, wait: true
+  }
 }
